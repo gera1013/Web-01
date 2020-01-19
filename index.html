@@ -8,49 +8,126 @@
         <title>Enmaquetación</title>
     </head>
     <body>
-        <h1>
-            <div class="nombre__colegio">Colegio Montano</div>
-            <div class="nombre__pagina">Libros electrónicos</div>
+        <div class="header__container">
+            <h1>
+                <div class="nombre__colegio">Colegio Montano</div>
+                <div class="nombre__pagina">Libros electrónicos</div>
+            </h1>
             <nav>
                 <ul>
-                    <li class="contras"><i class="fas fa-unlock"></i>        CONTRASEÑAS</li>
-                    <li class="nombre__usuario">John Doe          <i class="fas fa-chevron-down"></i></li>
+                    <a href=""><li class="contras"><i class="fas fa-unlock"></i> Contraseñas</li></a>
+                    <a href=""><li class="nombre__usuario">John Doe <i class="fas fa-chevron-down"></i></li></a>
                 </ul>
             </nav>
-        </h1>
+        </div>
         <div class="container1">
             <div class="seleccion__grados">
                 <div class="titulo__grados">PAQUETES</div>
-                <div class="nombres__grados">Primero Básico (8)</div>
-                <div class="nombres__grados">Segundo Básico (12)</div>
-                <div class="nombres__grados">Tercero Básico (40)</div>
-                <div class="nombres__grados">Cuarto Bachillerato en Ciencias y Letras (5)</div>
-                <div class="nombres__grados">Quinto Bachillerato en Ciencias y Letras (5)</div>
+                <a href=""><div class="nombres__grados">Primero Básico (8)</div></a>
+                <a href=""><div class="nombres__grados">Segundo Básico (12)</div></a>
+                <a href=""><div class="nombres__grados">Tercero Básico (40)</div></a>
+                <a href=""><div class="nombres__grados">Cuarto Bachillerato en Ciencias y Letras (5)</div></a>
+                <a href=""><div class="nombres__grados">Quinto Bachillerato en Ciencias y Letras (5)</div></a>
+                <a href=""><div class="nombres__grados">Cuarto Bachillerato en Ciencias y Letras (5)</div></a>
+                <a href=""><div class="nombres__grados">Quinto Bachillerato en Ciencias y Letras (5)</div></a>
                 <div class="divisor"></div>
                 <div class="agregar__paquete">Agregar Paquete:</div>
                 <div class="container2">
-                    <div class="caja__input">
-                        <input type="text" class="buscar__texto" placeholder="Escribe el nombre acá...">
-                    </div>
-                    <button class="add"><img src="" alt="" srcset=""></button>
+                    <input type="text" placeholder="Escribe el nombre acá...">
+                    <input type="submit" name="" value="+">
+                </div>
+            </div>
+            <div class="container__libros">
+                <div class="info__grado">
+                    <div class="nombre__grado">Primero Básico</div>
+                    <a class="edit" href=""><i class="fa fa-edit"></i></a>
+                    <a class="delete" href=""><i class="fa fa-trash-alt"></i></a>
+                    <input class="agregar__libro" type="submit" name="" value="Agregar libro">
+                    <input class="agregar__categoria" type="submit" name="" value="Agregar categoría">
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <a href=""><li>Idioma Español <i class="fa fa-trash-alt"></i></li></a>
+                        <a href=""><li>Idioma Inglés <i class="fa fa-trash-alt"></i></li></a>
+                    </ul> 
+                </div>
+                <div class="books">
+                    <ul>
+                        <li>
+                            <div class="book">
+                                <div class="book-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG);"></div>
+                                <div class="book-footer">
+                                    <div class="book-meta">
+                                        <div class="book-title">
+                                            El Principito de Antoine...
+                                        </div>
+                                        <div class="book-size">
+                                            15 MB
+                                        </div>
+                                    </div>
+                                    <div class="book-actions">
+                                        <button class="book-more"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book">
+                                <div class="book-image" style="background-image: url(https://image.slidesharecdn.com/fisicaparacienciaseingenieriaserway-jewett7maed-141022224459-conversion-gate02/95/fisica-para-ciencias-e-ingenieria-serway-jewett-7ma-ed-vol-1-1-638.jpg?cb=1414018077);"></div>
+                                <div class="book-footer">
+                                    <div class="book-meta">
+                                        <div class="book-title">
+                                            Física de Serway
+                                        </div>
+                                        <div class="book-size">
+                                            15 MB
+                                        </div>
+                                    </div>
+                                    <div class="book-actions">
+                                        <button class="book-more"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book">
+                                <div class="book-image" style="background-image: url(https://static.docsity.com/documents_pages/apuntes/2016/11/21/6869947208dd553e090acecec81e71f4.png);"></div>
+                                <div class="book-footer">
+                                    <div class="book-meta">
+                                        <div class="book-title">
+                                            Cálculo
+                                        </div>
+                                        <div class="book-size">
+                                            15 MB
+                                        </div>
+                                    </div>
+                                    <div class="book-actions">
+                                        <button class="book-more"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book">
+                                <div class="book-image" style="background-image: url(https://statics.convergencia.trevenque.es/portadas/Originales/PUBLIDISA_3/PUB0190599.jpg);"></div>
+                                <div class="book-footer">
+                                    <div class="book-meta">
+                                        <div class="book-title">
+                                            Matemáticas 2
+                                        </div>
+                                        <div class="book-size">
+                                            15 MB
+                                        </div>
+                                    </div>
+                                    <div class="book-actions">
+                                        <button class="book-more"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!--<div class="book">
-            <div class="book-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG);"></div>
-            <div class="book-footer">
-                <div class="book-meta">
-                    <div class="book-title">
-                        El Principito
-                    </div>
-                    <div class="book-size">
-                        15 MB
-                    </div>
-                </div>
-                <div class="book-actions">
-                    <button class="book-more"></button>
-                </div>
-            </div>
-        </div>-->
     </body>
 </html>

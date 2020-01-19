@@ -5,10 +5,33 @@ body {
 }
 
 h1 {
+    float: left;
+}
+
+body {
+    background: #f1f5f6;
+    display: flex;
+    flex-flow: column;
+}
+
+i {
+    transition: 0.25s;
+}
+
+.container__libros i:hover {
+    transform: scale(1.2);
+}
+
+.nombre__usuario:hover, .contras:hover {
+    transform: scale(1.2);
+}
+
+.header__container { 
     height: 102px;
 }
 
 nav {
+    align-self: flex-end;
     float: right;
 }
 
@@ -23,88 +46,187 @@ nav li {
     padding: 10rem 8rem;
 }
 
-.add {
-    border-radius: 50%;
-    display: inline-flex;
-    margin-bottom: 4rem;
-    margin-left: 4rem;
+.books {
+    display: flex;
+    flex-flow: row;
+    padding-left: 20rem;
+    padding-top: 10rem;
 }
 
-.caja__input {
-    align-self: flex-start;
-    top: 50%;
-    left: 50%;
-    background: #f1f6f6;
-    height: 7rem;
-    width: 50rem;
-    border-radius: 10rem;
-    margin-top: 2rem;
-    margin-left: 8rem;
-    margin-bottom: 12rem;
+.books ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.buscar__texto {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding-left: 3rem;
-    color: #c7c7c7;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 50rem;
-    font-weight: bold;
+.books li {
+    display: inline-block;
+    padding-left: 10rem;
 }
 
-.nombre__usuario {
-    color: #00a09b;
-    font-size: 6rem;
+.books li:first-child {
+    padding-left: 0;
 }
 
-.contras {
-    color: #00c4c0;
+.navigation {
+    display: flex;
+    flex-flow: row;
+    padding: 5rem 10rem 5rem 20rem;
+}
+
+.navigation ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 4rem;
+}
+
+.navigation li {
+    color: #a6a7a7;
+    display: inline-block;
     font-size: 5rem;
+    padding-right: 8rem;
+    transition: 0.25s;
 }
 
-.container1 {
-    background-color: #f1f5f6;
-    height: fit-content;
-    margin: 0rem;
-    padding: 12rem 6rem 50rem 11rem;
+.navigation li:hover {
+    color: #019c97;
+    transform: scale(1.1);
 }
 
-.container2 {
+.info__grado {
     display: flex;
     flex-direction: row;
-    height: fit-content;
+    padding: 0rem 10rem 5rem 20rem;
+}
+
+.serway {
+    padding-left: 10rem;
+}
+
+.info__grado a{
+    font-size: 6rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.edit {
+    color: #a0aaaa;
+    padding-left: 6rem;
+}
+
+.delete {
+    color: #c78181;
+    padding-left: 4rem;
+    margin-right: 60rem;
+}
+
+.info__grado .nombre__grado {
+    color: #00938e;
+    font-size: 8rem;
+}
+
+.info__grado input[type = "submit"] {
+    border: 0;
+    border-radius: 6rem;
+    color: white;
+    display: block;
+    float: ri   ght;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: auto 3rem;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    padding: 3rem 2rem;
+    width: 51rem
+}
+
+.agregar__categoria {
+    background: #00c2be;
+}
+
+.agregar__libro {
+    background: #00c265;
 }
 
 .agregar__paquete {
     color: #22ada8;
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
     padding-top: 8rem;
     padding-left: 11rem;
     text-transform: uppercase;
 }
 
-.titulo__grados {
-    color: #e1e6e6;
-    font-size: 3rem;
-    font-weight: bold;
-    padding-left: 11rem;
-    padding-top: 12rem;
-    padding-bottom: 2rem;
+.container1 {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0rem;
+    padding: 12rem 6rem 50rem 11rem;
 }
 
-.nombres__grados {
-    color: #747e7e;
+.container2 {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.container2  input[type = "submit"] {
+    border: 0;
+    border-radius: 50%;
+    background: #00bcb7;
+    color: white;
+    display: block;
+    font-size: 10rem;
+    font-weight: bolder;
+    margin: 2rem 0 5rem 3rem;
+    outline: none; 
+    text-align: center;
+    transform: scale(1, 0.8);
+}
+
+.container2 input[type = "text"] {
+    border: 0.5rem solid #e3e9e9;
+    border-radius: 6rem;
+    background: #f1f6f6;
+    color: #c0c0c0;
+    display: block;
     font-size: 4rem;
-    padding: 4rem 11rem;
+    margin: 2rem 0 5rem 8rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 3rem auto;
+    width: 48rem;
 }
 
-.nombres__grados:hover {
-    color: #00a09b;
+.container__libros {
+    display: flex;
+    flex-direction: column;
+}
+
+.contras {
+    color: #00c4c0;
+    font-size: 5rem;
+    transition: 0.25s;
+    text-transform: uppercase;
+}
+
+.info__grado input[value = "Agregar categoría"]:hover {
+    background: white;
+    border: 0.5rem solid #00c2be;
+    color: #00c2be;
+}
+
+.info__grado input[value = "Agregar libro"]:hover {
+    background: white;
+    border: 0.5rem solid #00c265;
+    color: #00c265;
+}
+
+.info__grado input[type = "submit"]:hover {
+    transform: scale(1.2);
 }
 
 .nombre__colegio {
@@ -124,6 +246,22 @@ nav li {
     padding: 1rem;
 }
 
+.nombre__usuario {
+    color: #00a09b;
+    font-size: 6rem;
+    transition: 0.25s;
+}
+
+.nombres__grados {
+    color: #747e7e;
+    font-size: 4rem;
+    padding: 4rem 11rem;
+}
+
+.nombres__grados:hover {
+    color: #00a09b;
+}
+
 .seleccion__grados {
     background: white;
     border-radius: 2rem;
@@ -132,6 +270,19 @@ nav li {
     flex-direction: column;
     height: fit-content;
     width: 80rem;
+}
+
+.seleccion__grados a {
+    text-decoration: none;
+}
+
+.titulo__grados {
+    color: #e1e6e6;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 11rem;
+    padding-top: 12rem;
+    padding-bottom: 2rem;
 }
 
 .book {  
@@ -157,7 +308,7 @@ nav li {
 
 .book-title {
     color: #019C97;
-    font-size: 3rem;
+    font-size: 3.25rem;
     font-weight: bold;
 }
 
