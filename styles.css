@@ -4,14 +4,28 @@ body {
     font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 {
+.general__info {
+    flex: 1;
     float: left;
+}
+
+.contras, .nombre__usuario {
+    border-left: 0.5rem solid #e6ecec;
 }
 
 body {
     background: #f1f5f6;
     display: flex;
     flex-flow: column;
+    flex-wrap: nowrap;
+}
+
+.dropdown {
+    background: none;
+    border: none;
+    color: #00a09b;
+    padding: 0;
+    transition: 0.25s;
 }
 
 i {
@@ -22,16 +36,17 @@ i {
     transform: scale(1.2);
 }
 
-.nombre__usuario:hover, .contras:hover {
+.contras:hover, .dropdown:hover {
     transform: scale(1.2);
 }
 
 .header__container { 
+    background: white;
+    display: flex;
     height: 102px;
 }
 
 nav {
-    align-self: flex-end;
     float: right;
 }
 
@@ -65,13 +80,18 @@ nav li {
 }
 
 .books li:first-child {
-    padding-left: 0;
+    padding-left: 0 ;
 }
 
 .navigation {
+    border-bottom: 0.5rem solid #d7e1e1;
+    border-top: 0.5rem solid #d7e1e1;
     display: flex;
     flex-flow: row;
-    padding: 5rem 10rem 5rem 20rem;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    padding: 0rem 10rem 5rem 0rem;
+    text-align: center;
 }
 
 .navigation ul {
@@ -82,6 +102,11 @@ nav li {
     padding-top: 4rem;
 }
 
+.navigation a{
+    color: #a6a7a7;
+    text-decoration: none;
+}
+
 .navigation li {
     color: #a6a7a7;
     display: inline-block;
@@ -90,7 +115,11 @@ nav li {
     transition: 0.25s;
 }
 
-.navigation li:hover {
+.navigation i {
+    padding: 0 4rem;
+}
+
+.navigation i:hover {
     color: #019c97;
     transform: scale(1.1);
 }
@@ -132,7 +161,6 @@ nav li {
     border-radius: 6rem;
     color: white;
     display: block;
-    float: ri   ght;
     font-size: 4rem;
     font-weight: bold;
     margin: auto 3rem;
@@ -161,6 +189,11 @@ nav li {
     text-transform: uppercase;
 }
 
+.divisor {
+    border-top: 0.5rem solid #f1f6f6;
+    margin: 3rem 6rem 0 6rem;
+}
+
 .container1 {
     display: inline-flex;
     flex-direction: row;
@@ -173,17 +206,15 @@ nav li {
     flex-direction: row;
 }
 
-.container2  input[type = "submit"] {
+.add {
     border: 0;
     border-radius: 50%;
     background: #00bcb7;
     color: white;
-    display: block;
-    font-size: 10rem;
-    font-weight: bolder;
+    font-size: 6rem;
     margin: 2rem 0 5rem 3rem;
     outline: none; 
-    text-align: center;
+    padding: 2rem;
     transform: scale(1, 0.8);
 }
 
@@ -204,11 +235,15 @@ nav li {
 .container__libros {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
 }
 
 .contras {
     color: #00c4c0;
     font-size: 5rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     transition: 0.25s;
     text-transform: uppercase;
 }
@@ -249,6 +284,9 @@ nav li {
 .nombre__usuario {
     color: #00a09b;
     font-size: 6rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     transition: 0.25s;
 }
 
@@ -302,8 +340,9 @@ nav li {
 
 .book-footer {
     background: white;
+    display: flex;
+    flex-flow: row;
     padding: 16px;
-    position: relative;
 }
 
 .book-title {
@@ -319,8 +358,18 @@ nav li {
 
 .book-actions {
     bottom: 0;
-    height: 14rem;
-    position: absolute;
-    right: 0;
-    width: 12rem;
+    margin-left: auto;
+    height: auto;
+    padding-top: 1rem;
+    width: auto;
+}
+
+.book-more {
+    background: none;
+    border: none;
+}
+
+.book i {
+    color: #d6e1e1;
+    font-size: 5rem;
 }

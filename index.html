@@ -9,14 +9,20 @@
     </head>
     <body>
         <div class="header__container">
-            <h1>
+            <div class="general__info">
                 <div class="nombre__colegio">Colegio Montano</div>
                 <div class="nombre__pagina">Libros electrónicos</div>
-            </h1>
+            </div>
             <nav>
                 <ul>
-                    <a href=""><li class="contras"><i class="fas fa-unlock"></i> Contraseñas</li></a>
-                    <a href=""><li class="nombre__usuario">John Doe <i class="fas fa-chevron-down"></i></li></a>
+                    <a href="">
+                        <li class="contras">
+                            <i class="fas fa-unlock"></i> Contraseñas
+                        </li>
+                    </a>
+                    <li class="nombre__usuario">
+                        John Doe <button class="dropdown"><i class="fas fa-chevron-down"></i></button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +40,7 @@
                 <div class="agregar__paquete">Agregar Paquete:</div>
                 <div class="container2">
                     <input type="text" placeholder="Escribe el nombre acá...">
-                    <input type="submit" name="" value="+">
+                    <button class="add"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
             <div class="container__libros">
@@ -47,8 +53,8 @@
                 </div>
                 <div class="navigation">
                     <ul>
-                        <a href=""><li>Idioma Español <i class="fa fa-trash-alt"></i></li></a>
-                        <a href=""><li>Idioma Inglés <i class="fa fa-trash-alt"></i></li></a>
+                        <a href=""><li><div class="idioma">Idioma Español <i class="fa fa-trash-alt"></i></div></a>
+                        <a href=""><li><div class="idioma">Idioma Inglés <i class="fa fa-trash-alt"></i></div></li></a>
                     </ul> 
                 </div>
                 <div class="books">
@@ -66,7 +72,7 @@
                                         </div>
                                     </div>
                                     <div class="book-actions">
-                                        <button class="book-more"></button>
+                                        <button class="book-more"><i class="fas fa-ellipsis-v"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +90,7 @@
                                         </div>
                                     </div>
                                     <div class="book-actions">
-                                        <button class="book-more"></button>
+                                        <button class="book-more"><i class="fas fa-ellipsis-v"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +108,7 @@
                                         </div>
                                     </div>
                                     <div class="book-actions">
-                                        <button class="book-more"></button>
+                                        <button class="book-more"><i class="fas fa-ellipsis-v"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +126,7 @@
                                         </div>
                                     </div>
                                     <div class="book-actions">
-                                        <button class="book-more"></button>
+                                        <button class="book-more"><i class="fas fa-ellipsis-v"></i></button>
                                     </div>
                                 </div>
                             </div>
