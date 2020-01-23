@@ -6,7 +6,6 @@ body {
 
 .general__info {
     flex: 1;
-    float: left;
 }
 
 .contras, .nombre__usuario {
@@ -17,7 +16,7 @@ body {
     background: #f1f5f6;
     display: flex;
     flex-flow: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .dropdown {
@@ -46,10 +45,6 @@ i {
     height: 102px;
 }
 
-nav {
-    float: right;
-}
-
 nav ul {
     margin: 0rem;
     padding: 0rem;
@@ -64,23 +59,9 @@ nav li {
 .books {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     padding-left: 20rem;
     padding-top: 10rem;
-}
-
-.books ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.books li {
-    display: inline-block;
-    padding-left: 10rem;
-}
-
-.books li:first-child {
-    padding-left: 0 ;
 }
 
 .navigation {
@@ -90,8 +71,8 @@ nav li {
     flex-flow: row;
     margin-left: 20rem;
     margin-top: 2rem;
-    padding: 0rem 10rem 5rem 0rem;
-    text-align: center;
+    padding-right: 10rem;
+    text-align: top;
 }
 
 .navigation ul {
@@ -100,6 +81,11 @@ nav li {
     margin: 0;
     padding: 0;
     padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.navigation ul .idioma1 {
+    color: #00938e;
 }
 
 .navigation a{
@@ -120,7 +106,7 @@ nav li {
 }
 
 .navigation i:hover {
-    color: #019c97;
+    color: #c78181;
     transform: scale(1.1);
 }
 
@@ -134,7 +120,9 @@ nav li {
     padding-left: 10rem;
 }
 
-.info__grado a{
+.info__grado button {
+    background: none;
+    border: none;
     font-size: 6rem;
     margin-top: 1rem;
     text-align: center;
@@ -327,9 +315,16 @@ nav li {
     border-radius: 2rem;
     box-shadow: 1px 1px 5px 0px rgba(0,0, 0, 0.5);
     display: block;
+    flex-grow: 1;
     margin-bottom: 2rem;
+    margin-left: 10rem;
     overflow: hidden;
-    width: 226px;
+    max-width: 226px;
+    min-width: 226px;
+}
+
+.book.first-book {
+    margin-left: 0;
 }
 
 .book-image {
@@ -372,4 +367,11 @@ nav li {
 .book i {
     color: #d6e1e1;
     font-size: 5rem;
+}
+
+.division {
+    border-top: 1.5rem solid #00938e;
+    margin: 0;
+    margin-left: 20rem;
+    margin-right: 214rem;
 }
